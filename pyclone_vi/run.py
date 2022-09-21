@@ -28,6 +28,11 @@ def fit(
 
     log_p_data, mutations, samples = load_data(in_file, density, num_grid_points, precision=precision)
 
+### added lines to print
+    print(log_p_data)
+    print(mutations)
+    print(samples)
+
     best_elbo = np.float("-inf")
 
     result = None
